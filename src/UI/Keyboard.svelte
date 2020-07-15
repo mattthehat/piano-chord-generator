@@ -109,7 +109,7 @@
     onMount(() => {
         const sounds = keys.map(i => i.sound);
         sounds.forEach((sound, i) => {
-            new Audio(sound);
+            const audio = new Audio(sound);
         });
     })
 </script>
